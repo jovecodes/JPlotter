@@ -238,7 +238,7 @@ public:
 int main() {
     Jovial game;
 
-    game.push_plugin(Window::create({WINDOW_NAME, WINDOW_SIZE, WINDOW_RES, nullptr, Colors::White}));
+    game.push_plugin(new Window({WINDOW_NAME, WINDOW_SIZE, WINDOW_RES, nullptr, Colors::White}));
     game.push_plugins(plugins::default_plugins_2d);
     game.push_plugin(new NodePlugin(new World));
 
